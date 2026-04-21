@@ -13,6 +13,8 @@ class AudioRouting(private val audioManager: AudioManager) {
         private const val SAMPLE_RATE = 16000
         private const val CHANNEL_COUNT = 1
         private const val AUDIO_FORMAT = android.media.AudioFormat.ENCODING_PCM_16BIT
+        const val DEVICE_EARPIECE = 1
+        const val DEVICE_SPEAKER = 2
     }
 
     private var mediaRecorder: MediaRecorder? = null
@@ -26,7 +28,6 @@ class AudioRouting(private val audioManager: AudioManager) {
 
     private fun setupAudioMode() {
         audioManager.mode = AudioManager.MODE_IN_CALL
-        audioManager.speakerphoneOn = false
         audioManager.isSpeakerphoneOn = false
     }
 
@@ -118,10 +119,10 @@ class AudioRouting(private val audioManager: AudioManager) {
 
     fun setAudioDevice(device: Int) {
         when (device) {
-            AudioManager.STREAM_VOICE_CALL -> {
+            DEVICE_EARPIECE -> {
                 audioManager.isSpeakerphoneOn = false
             }
-            AudioManager.STREAM_SPEAKER -> {
+            DEVICE_SPEAKER -> {
                 audioManager.isSpeakerphoneOn = true
             }
         }

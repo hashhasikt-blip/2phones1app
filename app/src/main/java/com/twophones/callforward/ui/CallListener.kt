@@ -48,7 +48,7 @@ class CallListener(private val bluetoothManager: BluetoothManager) : Call.Callba
                 bluetoothManager.sendMessage(message)
             }
             
-            Call.STATE_CONNECTED -> {
+            Call.STATE_ACTIVE -> {
                 Log.d(TAG, "Call connected: $phoneNumber")
                 val message = BluetoothMessage(
                     type = "call_connected",

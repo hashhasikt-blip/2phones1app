@@ -69,7 +69,7 @@ class CallMonitoringService : Service() {
             }
 
             "speaker_on" -> {
-                audioRouting.setAudioDevice(AudioManager.STREAM_SPEAKER)
+                audioRouting.setAudioDevice(AudioRouting.DEVICE_SPEAKER)
             }
         }
     }
