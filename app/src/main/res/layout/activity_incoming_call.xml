@@ -32,14 +32,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:spacing="16dp">
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/btn_accept"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginEnd="8dp"
             android:text="@string/accept"
             android:textColor="@android:color/white"
             android:backgroundTint="@color/success" />
@@ -49,6 +49,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginStart="8dp"
             android:text="@string/reject"
             android:textColor="@android:color/white"
             android:backgroundTint="@color/error" />

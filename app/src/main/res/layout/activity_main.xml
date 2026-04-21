@@ -40,14 +40,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:spacing="8dp">
+                android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/btn_connect"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:layout_marginEnd="4dp"
                     android:text="@string/connect_device" />
 
                 <Button
@@ -55,6 +55,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:layout_marginStart="4dp"
                     android:text="@string/disconnect_device" />
 
             </LinearLayout>
@@ -102,7 +103,7 @@
                     android:id="@+id/btn_refresh_contacts"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@android:string/refresh"
+                    android:text="@string/refresh"
                     style="@style/Widget.Material3.Button.OutlinedButton" />
 
             </LinearLayout>
