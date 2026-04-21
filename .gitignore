@@ -1,0 +1,51 @@
+# Gradle Wrapper
+gradle/wrapper/gradle-wrapper.jar
+.gradle/
+
+# Build directory
+build/
+.build/
+
+# Local configuration file
+local.properties
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Android-specific
+*.apk
+*.aar
+*.ap_
+*.aab
+*.amsdk
+*.ap_
+
+# .NET
+bin/
+obj/
+*.dll
+*.pdb
+
+# Kotlin
+*.kt.bak
+kotests/
+*.log
+
+# Misc
+.project
+.classpath
+.c9/
+*.sublime-project
+*.sublime-workspace
+.settings/
+.externalNativeBuild/
+.cxx/
+
+# Local Properties
+*.properties
+!gradle.properties
